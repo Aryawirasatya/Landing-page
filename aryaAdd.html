@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pesan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'poppins',helvetica;
+        }
+        body{
+            background-color: rgb(255, 215, 222);
+ 
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner video{
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            opacity: 70%;
+        }
+        .container{
+            background: rgba(225, 225, 225, .2);
+            border-radius: 15px;
+            padding-top: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
+            z-index: 100;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 5px solid rgb(255, 160, 176);
+            height: 350px;
+            filter: blur(10%);
+            width: 300px;
+            /* border: 2px solid rgba(225, 225, 225, .5);
+            border-right:2px solid rgba(225, 225, 225, .2) ;
+            border-left:2px solid rgba(225, 225, 225, .2) ; */
+            backdrop-filter: blur(10px);
+        }
+        input{
+            padding-right: 25px;
+            margin: 5px;
+            border: none;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgb(255, 160, 176);
+            
+            
+            
+        }
+        input:focus{
+            outline: none;
+        }
+        button{
+            border: 2px solid;
+            padding: 5px 25px 5px 25px;
+            border-radius: 20px;
+            cursor: pointer;
+            color: rgb(255, 115, 139);
+            background-color: rgb(255, 241, 243);
+        }
+        button:hover{
+            background-color: rgb(255, 225, 230);
+        }
+        #tanggal{
+            padding: 0;
+        }
+        label{
+            color: rgb(255, 115, 139);
+            margin: 2px;
+        }
+        h1{
+            color: rgb(255, 115, 139);
+        }
+
+        select,option{
+            color: rgb(255, 115, 139);
+            border: none;
+            
+        }
+        select,option:focus{
+            outline: none;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <video autoplay loop>
+            <source src="/gmbr/rent.mp4">
+        </video>
+        <div class="container">
+            <h1>ORDER NOW</h1>
+ 
+            <select name="" class="inp-nama">
+                <option value="chizuru" class="inp-nama">Chizuru Ichinose</option>
+                <option value="ruka" class="inp-nama">Ruka Sarashina</option>
+                <option value="mami" class="inp-nama">Mami Namami</option>
+                <option value="sumi" class="inp-nama">Sumi Sakurasawa</option>
+            </select>
+            
+    
+            <select name="" class="inp-sch">
+                <option value="offdate" class="inp-sch">Paket special Ramadhan</option>
+                <option value="offdate" class="inp-sch">paket 100k/jam</option>
+                <option value="ondate" class="inp-sch">Paket kondangan</option>
+                <option value="ondate" class="inp-sch">Paket hemat</option>
+            </select>
+            <!-- <input type="text" class="inp-sch" placeholder=" jenis layanan" ><br> -->
+
+            <input type="date" name="" id="tanggal"><br>
+            <button class="btn-click">ORDER></button><br>
+            <label for="">Anda telah memesan talent: <br><span class="name-talent"></span><br> dengan jenis layanan: <br><span class="jns-layanan"></span> <br> untuk jadwal tanggal: <br>
+            <span class="tgl"></span></label>
+            
+
+        </div>
+    </div>
+
+    
+<script src="Script.js"></script>
+</body>
+</html>
